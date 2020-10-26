@@ -19,7 +19,7 @@ An example
 .NOTES
 General notes
 #>
-function Update-AVSetResiliencyTag {
+
     [CmdletBinding()]
     param (
         # The resource ID of the resource that is to be udpated with the tag
@@ -46,5 +46,5 @@ function Update-AVSetResiliencyTag {
             Write-Host "An error occurred while updating the resource. $($_ | ConvertTo-Json -Depth 100)"
         }        
     }
-}
+
 
